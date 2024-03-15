@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Enemeny : MonoBehaviour
 {
-    private Rigidbody rb;
-    public Transform ufo;
+    public GameObject ufo;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +15,6 @@ public class Enemeny : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //rb.AddForce(Vector3.Normalize, ufo.position - transform.position);
+        transform.position = Vector3.MoveTowards(transform.position, ufo.transform.position, 0.02f);
     }
 }
