@@ -15,6 +15,6 @@ public class Enemeny : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.position = Vector3.MoveTowards(transform.position, ufo.transform.position, 0.02f);
+        transform.position = Vector3.MoveTowards(transform.position, ufo.transform.position, 0.1f);
     }
 }
