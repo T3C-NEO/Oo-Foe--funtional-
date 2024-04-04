@@ -33,7 +33,10 @@ public class movement : MonoBehaviour
 
         //anim.SetFloat("Movement",move.z);
 
-        cha.Move(move *movespeed);
+        //if (anim.GetInteger("Jump") < 3)
+        //{
+            cha.Move(move *movespeed);
+        //}
 
         velocity.y += gravity * Time.deltaTime;
 
